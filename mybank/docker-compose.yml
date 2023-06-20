@@ -9,3 +9,13 @@ services:
       - "27017:27017"
     restart: always
 
+    #create the docker script of transaction application
+  mybank:
+    image: mybank
+    container_name: mybank
+    ports:
+        - "8080:8080"
+    restart: always
+    depends_on:
+        - mongodb
+
