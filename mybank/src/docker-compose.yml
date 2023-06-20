@@ -1,0 +1,11 @@
+#create the docker script of mongodb
+
+version: '2'
+services:
+  mongodb:
+    image: mongo:3.4
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    restart: always
+
