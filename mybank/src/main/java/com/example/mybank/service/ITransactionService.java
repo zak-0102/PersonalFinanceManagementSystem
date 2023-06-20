@@ -1,9 +1,7 @@
 //Service interface of transaction entity
 
 package com.example.mybank.service;
-
 import java.util.List;
-
 import com.example.mybank.model.Transaction;
 
 public interface ITransactionService {

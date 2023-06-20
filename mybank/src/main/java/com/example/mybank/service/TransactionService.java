@@ -1,16 +1,17 @@
 //Implement the transaction service class
 
 package com.example.mybank.service;
+
 import java.util.List;
+
 import com.example.mybank.model.Transaction;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.example.mybank.repository.TransactionRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-
 public class TransactionService implements ITransactionService {
-
 
     private TransactionRepository transactionRepository;
 
@@ -18,6 +19,7 @@ public class TransactionService implements ITransactionService {
     public TransactionService(TransactionRepository transactionRepository) {
         this.transactionRepository = transactionRepository;
     }
+
 
    //GetAllTransaction method with proper error handling
     @Override
